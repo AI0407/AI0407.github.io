@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BLOSSOMFASHION INC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: url('images/about.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        .about-content {
+            padding: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            font-size: 28px;
+            margin: 40px 0 20px 0;
+            color: #e74c3c;
+        }
+
+        .about-content h3 {
+            font-size: 22px;
+            margin: 25px 0 15px 0;
+            color: #34495e;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .about-content ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-content li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .about-content ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+            place-items: center;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            color: #bdc3c7;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .about-content h1 {
+                font-size: 28px;
+            }
+
+            .about-content h2 {
+                font-size: 24px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">BLOSSOMFASHION</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="about-content">
+        <div class="container">
+            <h1>BLOSSOMFASHION INC</h1>
+            <p>BLOSSOMFASHION INC is a Colorado-based women’s fashion company offering a seamless experience that combines trend-forward apparel, personalized styling, custom design solutions, and sample development. We are dedicated to helping women discover styles they love—and bringing those styles to life through professional design and production.</p>
+
+            <h2>What We Do</h2>
+            <p>At BLOSSOMFASHION INC, fashion is not just a product，it is a process of discovery, expression, and creation.</p>
+            <p>We provide a complete style-to-product journey that includes:</p>
+
+            <h3>1. Style Discovery & Inspiration</h3>
+            <p>Customers can browse curated looks across multiple aesthetics—Elegant, Minimalist, Chic, Romantic, Street, and Business Casual.</p>
+            <p>Each look is presented with detailed visual references and styling notes to help women identify what resonates with them.</p>
+
+            <h3>2. Personalized Styling & Look Recommendations</h3>
+            <p>When customers find a style they love, they can contact our team directly.</p>
+            <p>Our stylists will provide:</p>
+            <ul>
+                <li>personalized outfit recommendations</li>
+                <li>color palette and fabric suggestions</li>
+                <li>silhouette and proportion analysis</li>
+                <li>coordinated full-look styling options</li>
+            </ul>
+            <p>This ensures every customer gets a style proposal that truly reflects their preferences and needs.</p>
+
+            <h3>3. Professional Design & Customization</h3>
+            <p>Beyond ready-to-wear items, we offer professional fashion design services.</p>
+            <p>Based on the style the customer likes, we can:</p>
+            <ul>
+                <li>refine the design</li>
+                <li>adjust details such as fabric, cut, length, embellishment, or fit</li>
+                <li>create customized versions of the chosen style</li>
+            </ul>
+            <p>Our design team works closely with customers to turn inspiration into precise, production-ready designs.</p>
+
+            <h3>4. Sample Development (Prototyping)</h3>
+            <p>Once the design is confirmed, we move into sample development.</p>
+            <p>Our sample-making process includes:</p>
+            <ul>
+                <li>pattern creation</li>
+                <li>fabric sourcing</li>
+                <li>tailoring and construction</li>
+                <li>fit testing and refinements</li>
+            </ul>
+            <p>Customers receive a professionally made sample that reflects the final product, allowing them to evaluate fit, quality, and style before moving forward.</p>
+
+            <h3>5. A Complete Fashion Creation Experience</h3>
+            <p>From inspiration → style proposal → design → sample → finished product,</p>
+            <p>BLOSSOMFASHION INC provides a complete service for women who value both style and craftsmanship.</p>
+            <p>Our mission is to make fashion personal, accessible, and beautifully executed.</p>
+            <p>Our vision is to become the preferred partner for women seeking both style guidance and high-quality custom fashion creation.</p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Legal Name:</strong> BLOSSOMFASHION INC</p>
+                    <p><strong>State:</strong> Colorado</p>
+                    <p><strong>Address:</strong> 1500 N Grant St Ste 4226</p>
+                    <p><strong>City:</strong> Denver, CO 80203</p>
+                    <p><strong>Phone:</strong> +15714978907</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Store Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                    <p>Closed on Major Holidays</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BLOSSOMFASHION INC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
