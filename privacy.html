@@ -5,22 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy & Policy - BLOSSOMFASHION INC</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
             background: url('images/about.png') no-repeat center center fixed;
             background-size: cover;
-            color: #333;
         }
+
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 0 20px;
         }
+
+        header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        footer {
+            background-color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
         .privacy-content {
+            padding: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
@@ -57,6 +140,20 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">BLOSSOMFASHION</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy & Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="container">
         <div class="privacy-content">
             <h1>BLOSSOMFASHION INC</h1>
@@ -86,5 +183,29 @@
             </div>
         </div>
     </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Legal Name:</strong> BLOSSOMFASHION INC</p>
+                    <p><strong>State:</strong> Colorado</p>
+                    <p><strong>Address:</strong> 1500 N Grant St Ste 4226</p>
+                    <p><strong>City:</strong> Denver, CO 80203</p>
+                    <p><strong>Phone:</strong> +15714978907</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Store Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                    <p>Closed on Major Holidays</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BLOSSOMFASHION INC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
