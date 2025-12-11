@@ -421,6 +421,55 @@
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
+            
+            <script>
+                // 导航栏动态高亮功能
+                window.addEventListener('scroll', function() {
+                    const homeSection = document.getElementById('home');
+                    const collectionSection = document.getElementById('collection');
+                    const homeLink = document.querySelector('a[href="#home"]');
+                    const collectionLink = document.querySelector('a[href="#collection"]');
+                    
+                    // 获取页面滚动位置
+                    const scrollPosition = window.scrollY + 100;
+                    
+                    // 获取Featured Collection部分的顶部位置
+                    const collectionTop = collectionSection.offsetTop;
+                    
+                    // 根据滚动位置切换高亮状态
+                    if (scrollPosition >= collectionTop) {
+                        homeLink.classList.remove('active');
+                        collectionLink.classList.add('active');
+                    } else {
+                        homeLink.classList.add('active');
+                        collectionLink.classList.remove('active');
+                    }
+                });
+                
+                // 模态框功能
+                function openModal(imgSrc) {
+                    const modal = document.getElementById('myModal');
+                    const modalImg = document.getElementById('img01');
+                    const captionText = document.getElementById('caption');
+                    
+                    modal.style.display = 'block';
+                    modalImg.src = imgSrc;
+                    captionText.innerHTML = '';
+                }
+                
+                function closeModal() {
+                    const modal = document.getElementById('myModal');
+                    modal.style.display = 'none';
+                }
+                
+                // 点击模态框外部关闭
+                window.onclick = function(event) {
+                    const modal = document.getElementById('myModal');
+                    if (event.target == modal) {
+                        closeModal();
+                    }
+                }
+            </script>
         </div>
     </section>
     
